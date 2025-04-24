@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redwood Capital Solution - Work Review</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0e0e0e;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      color: #FFD700;
+      margin: 30px 0;
+      font-size: 2.5rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+
+    .lightbox {
+      position: fixed;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 9999;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 25px #fff;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Redwood Capital Solution - Work Review</h1>
+
+  <div class="gallery">
+    <img src="redwood/redwood1.png" alt="Work 1">
+    <img src="redwood/Screenshot 2025-04-23 195428.png" alt="Work 2">
+    <img src="redwood/Screenshot 2025-04-23 195506.png" alt="Work 3">
+    <img src="redwood/Screenshot 2025-04-23 195547.png" alt="Work 4">
+    <img src="redwood/Screenshot 2025-04-23 195628.png" alt="Work 5">
+    <img src="redwood/Screenshot 2025-04-23 195712.png" alt="Work 6">
+    <img src="redwood/Screenshot 2025-04-23 195732.png" alt="Work 7">
+    <img src="redwood/Screenshot 2025-04-23 195754.png" alt="Work 8">
+    <img src="redwood/Screenshot 2025-04-23 195856.png" alt="Work 9">
+    <img src="redwood/Screenshot 2025-04-23 195926.png" alt="Work 10">
+    <img src="redwood/Screenshot 2025-04-23 195954.png" alt="Work 11">
+    <img src="redwood/Screenshot 2025-04-23 200037.png" alt="Work 12">
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="Preview">
+  </div>
+
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+      });
+    });
+
+    lightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

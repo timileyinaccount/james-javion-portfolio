@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Some of My Various Works</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0e0e0e;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: #FFD700;
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+      margin-top: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 16px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+
+    #lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    #lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Some of My Various Works</h1>
+
+  <div class="gallery">
+    <img src="my other project/IMG-20250409-WA0022.jpg" alt="Project 1" />
+    <img src="my other project/WhatsApp Image 2025-04-18 at 10.59.25_a60a38a2.jpg" alt="Project 2" />
+    <img src="my other project/WhatsApp Image 2025-04-18 at 17.31.21_9cb1e25c.jpg" alt="Project 3" />
+    <img src="my other project/WhatsApp Image 2025-04-18 at 17.31.34_083be0ae.jpg" alt="Project 4" />
+    <img src="my other project/WhatsApp Image 2025-04-18 at 17.31.34_52a694ca.jpg" alt="Project 5" />
+    <img src="my other project/WhatsApp Image 2025-04-18 at 17.31.35_50720d48.jpg" alt="Project 6" />
+    <img src="my other project/WhatsApp Image 2025-04-18 at 17.31.37_7ba59bb8.jpg" alt="Project 7" />
+    <img src="my other project/WhatsApp Image 2025-04-19 at 22.48.54_d6e1c899.jpg" alt="Project 8" />
+    <img src="my other project/WhatsApp Image 2025-04-22 at 22.04.05_2205d2b0.jpg" alt="Project 9" />
+    <img src="my other project/WhatsApp Image 2025-04-23 at 19.11.50_59194c1c.jpg" alt="Project 10" />
+    <img src="my other project/WhatsApp Image 2025-04-23 at 19.12.02_4df9d87f.jpg" alt="Project 11" />
+    <img src="my other project/WhatsApp Image 2025-04-23 at 19.12.14_44262b9d.jpg" alt="Project 12" />
+    <img src="my other project/WhatsApp Image 2025-04-23 at 19.12.24_6f73cf38.jpg" alt="Project 13" />
+  </div>
+
+  <div id="lightbox">
+    <img id="lightbox-img" src="" alt="Zoomed Image" />
+  </div>
+
+  <script>
+    const galleryImages = document.querySelectorAll(".gallery img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+
+    galleryImages.forEach(img => {
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+      });
+    });
+
+    lightbox.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+  </script>
+</body>
+</html>
+    

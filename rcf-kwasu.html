@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RCF KWASU Projects</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #0e0e0e;
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        color: #FFD700;
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+        margin-top: 20px;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .gallery img {
+        width: 100%;
+        border-radius: 16px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+      }
+
+      /* Lightbox styles */
+      #lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+      }
+
+      #lightbox img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 12px;
+        box-shadow: 0 0 20px #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>RCF KWASU Projects</h1>
+    <div class="gallery">
+      <img src="rcf/Screenshot 2025-04-23 130753.png" alt="RCF Project 1" />
+      <img src="rcf/Screenshot 2025-04-23 130840.png" alt="RCF Project 2" />
+      <img src="rcf/Screenshot 2025-04-23 130912.png" alt="RCF Project 3" />
+      <img src="rcf/Screenshot 2025-04-23 131006.png" alt="RCF Project 4" />
+      <img src="rcf/Screenshot 2025-04-23 131029.png" alt="RCF Project 5" />
+      <img src="rcf/Screenshot 2025-04-23 131056.png" alt="RCF Project 6" />
+      <img src="rcf/Screenshot 2025-04-23 131118.png" alt="RCF Project 7" />
+      <img src="rcf/Screenshot 2025-04-23 131139.png" alt="RCF Project 8" />
+      <img src="rcf/Screenshot 2025-04-23 131212.png" alt="RCF Project 9" />
+      <img src="rcf/New folder/Screenshot 2025-04-23 142412.png" alt="RCF Project" />
+<img src="rcf/New folder/Screenshot 2025-04-23 142412fff.png" alt="RCF Project" />
+<img src="rcf/New folder/Screenshot 2025-04-23 142455.png" alt="RCF Project" />
+<img src="rcf/New folder/Screenshot 2025-04-23 142520.png" alt="RCF Project" />
+<img src="rcf/New folder/Screenshot 2025-04-23 142652.png" alt="RCF Project" />
+<img src="rcf/New folder/Screenshot 2025-04-23 142723.png" alt="RCF Project" />
+<img src="rcf/New folder/Screenshot 2025-04-23 142759.png" alt="RCF Project" />
+<img src="rcf/New folder/Screenshot 2025-04-23 142833.png" alt="RCF Project" />
+<img src="rcf/New folder/WhatsApp Image 2025-04-09 at 16.32.15_b0ef3494.jpg" alt="RCF Project" />
+<img src="rcf/New folder/WhatsApp Image 2025-04-15 at 12.44.21_dd405954.jpg" alt="RCF Project" />
+<img src="rcf/New folder/WhatsApp Image 2025-04-18 at 17.31.18_39811ce2.jpg" alt="RCF Project" />
+<img src="rcf/New folder/WhatsApp Image 2025-04-18 at 17.31.34_0db92b60.jpg" alt="RCF Project" />
+<img src="rcf/New folder/WhatsApp Image 2025-04-18 at 23.11.25_731e99b5.jpg" alt="RCF Project" />
+<img src="rcf/New folder/WhatsApp Image 2025-04-18 at 23.11.26_897f8729.jpg" alt="RCF Project" />
+<img src="rcf/New folder/WhatsApp Image 2025-04-18 at 23.12.06_446fa0a1.jpg" alt="RCF Project" />
+<img src="rcf/New folder/WhatsApp Image 2025-04-19 at 17.39.48_340c22b6.jpg" alt="RCF Project" />
+<img src="rcf/New folder/WhatsApp Image 2025-04-21 at 19.00.23_280310f0.jpg" alt="RCF Project" />
+
+    </div>
+
+    <!-- Lightbox element -->
+    <div id="lightbox">
+      <img id="lightbox-img" src="" alt="Zoomed" />
+    </div>
+
+    <script>
+      const galleryImages = document.querySelectorAll(".gallery img");
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+
+      galleryImages.forEach(img => {
+        img.addEventListener("click", () => {
+          lightboxImg.src = img.src;
+          lightbox.style.display = "flex";
+        });
+      });
+
+      lightbox.addEventListener("click", () => {
+        lightbox.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

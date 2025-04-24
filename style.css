@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #000;
+  color: white;
+  height: 100vh;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #141E30, #243B55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+  opacity: 0.1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  background: linear-gradient(to right, #ffffff, #00ffc8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.typing {
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 30px;
+  margin-bottom: 30px;
+  color: #ddd;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  font-weight: 600;
+  border-radius: 50px;
+  color: white;
+  background: #00ffc8;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,255,200,0.2);
+  animation: fadeIn 2.5s ease-out forwards;
+}
+
+.cta-btn:hover {
+  background: #00d8a4;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Professional Skills Styles === */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+  }
+  
+  .skills-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skills-section .subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2.5rem;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .skill-item {
+    background: #f9f9f9;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: left;
+  }
+  
+  .skill-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .skill-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-item p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .skill-item ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0.95rem;
+  }
+  
+  .skill-item ul li {
+    margin: 0.3rem 0;
+    color: #0a84ff;
+  }
+  
+
+/* === Work Experience Styles === */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.work-experience {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.work-experience h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.work-experience .intro {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.experience-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.experience-card:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.logo-box {
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+}
+
+.logo-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.experience-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.experience-info p {
+  margin: 0.25rem 0;
+  color: #333;
+}
+
+.date {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.review-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  background: #eee;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.review-btn:hover {
+  background: #ccc;
+}
+
+
+
+/* === Dark Theme Overrides for Skills & Work Experience === */
+body {
+  background: linear-gradient(to right, #141E30, #243B55);
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, .intro, .experience-card, .skills-title {
+  color: white !important;
+}
+
+.experience-card, .skills-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+button, .btn, .review-btn {
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover, .review-btn:hover {
+  background-color: #0077cc;
+}
+
+a {
+  color: #00cfff;
+}
+
+a:hover {
+  color: #00aaff;
+}
+
+
+
+/* === Fix for Skills Section White Background === */
+.skills-section {
+  background: rgba(20, 30, 48, 0.95);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.skill-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+.skill-item h3,
+.skill-item p,
+.skill-item ul,
+.skill-item li {
+  color: white;
+}
+
+
+html { scroll-behavior: smooth; }
+/* Contact Section Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.contact-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: white;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+.gmail {
+  background-color: #D44638;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.1);
+}
+
+/* Matched Contact Section Theme */
+.contact-section {
+  background: linear-gradient(to right, #141E30, #243B55);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.contact-methods a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 15px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-methods a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.gradient-bg {
+  background: radial-gradient(circle at top left, #182736, #0e0e0e);
+  color: #fff;
+}
+

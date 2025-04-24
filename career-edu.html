@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Career Edu Projects</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0e0e0e;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: #FFD700;
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+      margin-top: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 16px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+
+    #lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    #lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Career Edu Projects</h1>
+
+  <div class="gallery">
+    <img src="career edu/101572412_255819772512884_2204279629802373120_n.jpg" alt="Career Edu Project 1" />
+    <img src="career edu/103748065_264932604934934_7337010325337191449_n.jpg" alt="Career Edu Project 2" />
+    <img src="career edu/128335578_397024568392403_6329235828407893413_n.jpg" alt="Career Edu Project 3" />
+    <img src="career edu/130883326_405595874201939_8364675098904177936_n.jpg" alt="Career Edu Project 4" />
+    <img src="career edu/152444176_450983802996479_8090603930798923174_n.jpg" alt="Career Edu Project 5" />
+    <img src="career edu/473225307_1341555113939339_7455695225769883806_n.jpg" alt="Career Edu Project 6" />
+    <img src="career edu/473592766_1341548427273341_6824685008199653842_n.jpg" alt="Career Edu Project 7" />
+    <img src="career edu/476082766_1360595542035296_8925355825702528860_n.jpg" alt="Career Edu Project 8" />
+    <img src="career edu/486124593_1070054585138088_5084147238999507390_n.jpg" alt="Career Edu Project 9" />
+    <img src="career edu/72277379_114833849944811_6571969586936152064_n.jpg" alt="Career Edu Project 10" />
+    <img src="career edu/83755189_154052842689578_3081174534166937600_n.jpg" alt="Career Edu Project 11" />
+  </div>
+
+  <div id="lightbox">
+    <img id="lightbox-img" src="" alt="Zoomed Image" />
+  </div>
+
+  <script>
+    const galleryImages = document.querySelectorAll(".gallery img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+
+    galleryImages.forEach(img => {
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+      });
+    });
+
+    lightbox.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+  </script>
+</body>
+</html>

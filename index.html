@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Javion Davu - Header</title>
+<style>
+        body {
+          margin: 0;
+          padding: 0;
+          background-color: #0e0e0e;
+          color: #fff;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+      
+        h1 {
+          text-align: center;
+          color: #FFD700;
+          font-size: 3rem;
+          font-weight: bold;
+          text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+          margin-top: 20px;
+        }
+      
+        .gallery {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 20px;
+          padding: 30px;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+      
+        .gallery img {
+          width: 100%;
+          border-radius: 16px;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          cursor: pointer;
+        }
+      
+        .gallery img:hover {
+          transform: scale(1.05);
+          box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+      
+        /* LIGHTBOX STYLES */
+        .lightbox {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0,0,0,0.9);
+          display: none;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+        }
+      
+        .lightbox img {
+          max-width: 90%;
+          max-height: 90%;
+          border-radius: 12px;
+          box-shadow: 0 0 20px #fff;
+          animation: fadeIn 0.3s ease-in-out;
+        }
+      
+        @keyframes fadeIn {
+          from { opacity: 0; transform: scale(0.95); }
+          to { opacity: 1; transform: scale(1); }
+        }
+      </style>      
+<link href="style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&amp;display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+<header class="hero">
+<div class="overlay"></div>
+<div class="content">
+<h1 class="name">Javion Davu Portfolio</h1>
+<h2 class="typing" id="typed-text"></h2>
+<a class="cta-btn" href="#skills">See My Skills ↓</a>
+</div>
+</header>
+
+<script src="script.js"></script>
+<!-- Professional Skills Section -->
+<!-- Professional Skills Section -->
+<section id="about" style="position: relative; background: url('images/header-bg.jpg') no-repeat center center/cover; color: #fff; padding: 60px 20px;">
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(14, 14, 14, 0.7); z-index: 1;"></div>
+  <div style="position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
+    
+    <!-- Profile Image -->
+    <div style="flex: 1 1 300px;">
+      <img src="images/1.png" alt="Javion Davu" style="width: 100%; border-radius: 15px; box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);" />
+    </div>
+
+    <!-- About Text -->
+    <div style="flex: 1 1 500px;">
+      <h2 style="font-size: 2.8rem; margin-bottom: 20px;">About me</h2>
+      <p style="font-size: 1rem; line-height: 1.8;">
+        Hello! I’m Javion Davu, full name Adeniyi James Javion Davu, but I’m widely known as Javion. I’m currently in my fourth year, studying Electrical and Computer Engineering at Kwara State University.
+
+        My passion for design started from a young age and has grown into a purposeful skill. Over time, I’ve refined my ability to not just create, but to make an impact through visual storytelling and creative strategy.
+        
+        With over six years of experience in social media management, I specialize in combining design with strategy to help brands build a powerful and lasting digital presence.
+        
+        I’m driven by creativity, inspired by results, and committed to bringing ideas to life in a meaningful way.
+      </p>
+      <!-- Stats -->
+      <!-- Updated Stats -->
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 30px;">
+  <div style="position: relative; padding-left: 15px;">
+    <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background-color: #3498db; border-radius: 4px;"></div>
+    <h3 style="font-size: 2rem; margin: 0;">215</h3>
+    <p style="margin: 5px 0 0;">Completed Projects</p>
+  </div>
+  <div style="position: relative; padding-left: 15px;">
+    <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background-color: #27ae60; border-radius: 4px;"></div>
+    <h3 style="font-size: 2rem; margin: 0;">95%</h3>
+    <p style="margin: 5px 0 0;">Happy Clients</p>
+  </div>
+  <div style="position: relative; padding-left: 15px;">
+    <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background-color: #f1c40f; border-radius: 4px;"></div>
+    <h3 style="font-size: 2rem; margin: 0;">7</h3>
+    <p style="margin: 5px 0 0;">Years in Graphics Design<br>and Social Media Management</p>
+  </div>
+  <div style="position: relative; padding-left: 15px;">
+    <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background-color: #e74c3c; border-radius: 4px;"></div>
+    <h3 style="font-size: 2rem; margin: 0;">196+</h3>
+    <p style="margin: 5px 0 0;">5 Stars Reviews</p>
+  </div>
+</div>
+
+<!-- Updated Resume Section -->
+<div style="margin-top: 40px; background-color: rgba(255,255,255,0.1); padding: 20px 30px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+  <div style="color: #fff;">
+    <h4 style="margin: 0; font-size: 1.2rem;">My Resume</h4>
+    <p style="margin: 5px 0 0;">Check out my resume to see more about me</p>
+  </div>
+  <a href="resume.pdf" download style="margin-top: 10px; background-color: #007bff; color: #fff; padding: 12px 24px; border-radius: 10px; text-decoration: none; font-weight: bold;">
+    Download Resume
+  </a>
+</div>
+    </div>
+  </div>
+</section>
+
+<section class="skills-section" id="skills">
+<h2>Professional Skills</h2>
+<p class="subtitle">From planning to posting to performance, I handle the full social media cycle.</p>
+<div class="skills-grid">
+<!-- Skill Item 1 -->
+<div class="skill-item">
+<img alt="Strategy Icon" src="icons/strategy.png"/>
+<h3>Strategy and Planning</h3>
+<p>I map out what to post, when, and why, making sure the content aligns with the brand’s goals and speaks directly to the audience. The tools i use include</p>
+<ul>
+<li>→ Canva Content Planner</li>
+</ul>
+</div>
+<!-- Skill Item 2 -->
+<div class="skill-item">
+<img alt="Content Creation Icon" src="icons/creation.png"/>
+<h3>Content Creation and Branding</h3>
+<p>I create on-brand content that speaks to the target audience while maintaining consistency across all platforms. From visuals to voice, everything aligns with the brand’s identity. The tools i use include</p>
+<ul>
+<li>→ Adobe Photoshop (For full access control)</li>
+<li>→ Canva (For quick designs)</li>
+<li>→ Figma</li>
+<li>→ Capcut (For TikTok, reels)</li>
+</ul>
+</div>
+<!-- Skill Item 3 -->
+<div class="skill-item">
+<img alt="Analytics Icon" src="icons/analytics.png"/>
+<h3>Analytics &amp; Optimization</h3>
+<p>I track how posts perform and use the numbers to figure out what to keep, what to tweak, and how to get better results over time. The tools i use include</p>
+<ul>
+<li>→ Instagram Insights</li>
+<li>→ TikTok Analytics</li>
+<li>→ Meta Business Suite</li>
+<li>→ X Analytics</li>
+</ul>
+</div>
+<!-- Skill Item 4 -->
+<div class="skill-item">
+<img alt="Innovation Icon" src="images/trendspotting.png"/>
+<h3>Trendspotting &amp; Innovation</h3>
+<p>I stay plugged into what’s trending so I can create content that feels current and relevant. The tools i use include</p>
+<ul>
+<li>→ X (Trending Tab)</li>
+<li>→ TikTok Discover</li>
+<li>→ Instagram Explore</li>
+</ul>
+</div>
+<!-- Skill Item 5 -->
+<div class="skill-item">
+<img alt="Engagement Icon" src="images/engagement.png"/>
+<h3>Engagement &amp; Community Building</h3>
+<p>I actively respond to comments, DMs, mentions, and tags, building real connections that turn casual followers into loyal fans. The tools i use include</p>
+<ul>
+<li>→ Instagram Inbox</li>
+<li>→ TikTok Comments Manager</li>
+</ul>
+</div>
+<!-- Skill Item 6 -->
+<div class="skill-item">
+<img alt="Scheduling Icon" src="images/analytics.png"/>
+<h3>Scheduling and Publishing</h3>
+<p>I organize and schedule posts across platforms to make sure content goes out at the right time. The tools i use include</p>
+<ul>
+<li>→ Meta Business Suite</li>
+</ul>
+</div>
+<!-- Skill Item 7 -->
+<div class="skill-item">
+<img alt="Ads Icon" src="images/ads-management.png"/>
+<h3>Paid Ads &amp; Promotions Management</h3>
+<p>I run targeted ad campaigns that drive traffic, grow reach, or boost conversions, while staying within the given budget. The tools i use include</p>
+<ul>
+<li>→ TikTok Ads Manager</li>
+<li>→ Google Ads</li>
+<li>→ Facebook Ad Center</li>
+</ul>
+</div>
+<!-- Skill Item 8 -->
+<div class="skill-item">
+<img alt="Multi Account Icon" src="images/multi-account.png"/>
+<h3>Multi-Account Management</h3>
+<p>I handle content, engagement, and reporting across several brands or platforms without losing the flow or mixing things up. The tools i use include</p>
+<ul>
+<li>→ Hootsuite</li>
+<li>→ Manually</li>
+</ul>
+</div>
+<!-- Skill Item 9 -->
+<div class="skill-item">
+<img alt="Troubleshooting Icon" src="images/troubleshooting.png"/>
+<h3>Social Platform Troubleshooting</h3>
+<p>When things break, like blocked links, disabled features, or reach drops, I step in to troubleshoot fast and get things back on track. The tools i use include</p>
+<ul>
+<li>→ Instagram Help Center</li>
+<li>→ Meta Support Inbox</li>
+<li>→ TikTok Creator Support</li>
+<li>→ Twitter/X Support</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Work Experience Section -->
+<section class="work-experience">
+<h1>Work Experience</h1>
+<p class="intro">
+      A proven track record of successfully managing social media strategies, creating engaging content,
+      and driving brand growth across multiple platforms for diverse clients. Click on Review so you get
+      directed to the page showing my work.
+    </p>
+<div class="experience-grid">
+<div class="experience-card">
+<div class="logo-box">
+<img alt="Career Edu logo" src="images/career-edu-logo.png"/>
+</div>
+<div class="experience-info">
+<h3>Career edu</h3>
+<p><strong>Social media manager &amp; graphics designer</strong></p>
+<p class="date">Oct , 2019 – Present</p>
+<a class="review-btn" href="career-edu.html">Review</a>
+</div>
+</div>
+<div class="experience-card">
+<div class="logo-box">
+<img alt="RCF logo" src="images/rcf-logo.png"/>
+</div>
+<div class="experience-info">
+  <h3>RCF Kwasu</h3>
+  <p><strong>Graphics Designer</strong></p>
+  <p class="date">Sept, 2021 – Present</p>
+  <a class="review-btn" href="rcf-kwasu.html">Review</a>
+</div>
+</div>
+<div class="experience-card">
+<div class="logo-box">
+<img alt="Redwood Capital Solution logo" src="images/redwood-logo.png"/>
+</div>
+<div class="experience-info">
+<h3>Redwood Capital Solution</h3>
+<p><strong>Graphic Designer</strong></p>
+<p class="date">March 30, 2018 – February 20, 2019</p>
+<a class="review-btn" href="redwood.html">Review</a>
+</div>
+</div>
+<div class="experience-card">
+<div class="logo-box">
+<img alt="Glynch Consultant logo" src="images/glynch-logo.png"/>
+</div>
+<div class="experience-info">
+<h3>Glynch Consultant</h3>
+<p><strong>Social Media Manager</strong></p>
+<p class="date">October 30, 2017 – March 20, 2018</p>
+<a class="review-btn" href="glynch.html">Review</a>
+</div>
+</div>
+<div class="experience-card">
+<div class="logo-box">
+<img alt="Other Works logo" src="images/other-works.png"/>
+</div>
+<div class="experience-info">
+<h3>Some of my other works</h3>
+<p><strong>Various projects</strong></p>
+<a class="review-btn" href="other-works.html">Review</a>
+</div>
+</div>
+</div>
+</section>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Me</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+<section class="contact-section">
+<div class="container">
+<h2 class="section-title">Let's Connect</h2>
+<p class="section-subtitle">You can reach out to me via WhatsApp or Gmail. I’d love to hear from you!</p>
+<div class="contact-buttons">
+<a class="contact-btn whatsapp" href="https://wa.me/2348162472146" target="_blank">
+<img alt="WhatsApp" src="whatsapp-icon.svg"/> Chat on WhatsApp
+        </a>
+<a class="contact-btn gmail" href="mailto:javiondavu@gmail.com" target="_blank">
+<img alt="Gmail" src="gmail-icon.svg"/> Send an Email
+        </a>
+</div>
+</div>
+</section>
+
+
+
+</body>
+<!-- Lightbox pop-up -->
+<div class="lightbox" id="lightbox">
+        <img src="" alt="Preview">
+      </div>
+      
+      <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+      
+        document.querySelectorAll('.gallery img').forEach(img => {
+          img.addEventListener('click', () => {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = img.src;
+          });
+        });
+      
+        lightbox.addEventListener('click', () => {
+          lightbox.style.display = 'none';
+        });
+      </script>
+      
+</html>
+
+
+
+</body>
+</html>
